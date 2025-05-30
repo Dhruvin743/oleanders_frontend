@@ -1,0 +1,161 @@
+.footer-container {
+  background-color: var(--black-100);
+}
+
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-to-top {
+  display: flex;
+  padding: 16px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.back-to-top span {
+  color: var(--primary-lighter);
+}
+
+.back-to-top img {
+  width: 12px;
+  height: 12px;
+  aspect-ratio: 1/1;
+  stroke-width: 2px;
+  stroke: var(--primary-lighter);
+}
+
+.footer-content {
+  display: flex;
+  padding: 40px 80px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 56px;
+}
+
+.footer-links-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links-box-heading {
+  color: var(--white-100);
+}
+
+.footer-links-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  color: var(--white-100);
+  list-style: none;
+}
+
+.footer-form-box {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-form-box-heading {
+  color: var(--white-100);
+}
+
+.footer-form-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-form-box-content input {
+  color: var(--white-100);
+  padding: 16px;
+  border-radius: 6px;
+  border: none;
+  background: var(--black-300);
+
+  &::placeholder {
+    color: var(--white-100);
+  }
+}
+
+.footer-decoration {
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  margin-inline: auto;
+  flex-shrink: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #d2eeff88 50%,
+    transparent 100%
+  );
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 80px;
+}
+
+.footer-bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 9px;
+  color: var(--white-100);
+}
+
+.footer-bottom-left img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-bottom-right a {
+  color: rgba(244, 251, 255, 0.72);
+  font-size: 21px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-bottom-right-divider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--black-500);
+}
+
+.footer-bottom-right-social {
+  display: flex;
+  gap: 30px;
+}
+
+.linkedin-icon {
+  width: 25px;
+  height: 24px;
+}
+
+.gmail-icon {
+  width: 31px;
+  height: 24px;
+}
