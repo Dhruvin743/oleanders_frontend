@@ -320,11 +320,13 @@ img {
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
+  background-color: var(--black-100);
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
+  background-color: var(--black-100);
 }
 
 .gradient-text {

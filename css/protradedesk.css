@@ -1,0 +1,73 @@
+.protradedesk-hero-display-right {
+  width: 508px;
+  height: 357px;
+}
+
+.protradedesk-key-features-1-image-container {
+  display: flex;
+  width: 100%;
+  max-width: 780px;
+  padding: 48px 32px 48px 100px;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 0 32px 32px 0;
+  background: var(--black-400);
+  box-shadow: 0px 0px 40px -24px rgba(0, 0, 0, 0.25);
+}
+
+.protradedesk-key-features-1-image-container div img {
+  width: 642px;
+  height: 428px;
+  aspect-ratio: 3/2;
+}
+
+.protradedesk-key-features-1-text-container {
+  width: 100%;
+  max-width: 575px;
+  padding: 40px;
+  margin-right: -90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  color: var(--white-100);
+  border-radius: 32px 0 0 32px;
+  background: var(--black-300);
+  z-index: 1;
+}
+
+.protradedesk-key-features-1-text-container h2 {
+  max-width: 427px;
+}
+
+.protradedesk-key-features-1-text-container h2 span {
+  font-style: italic;
+}
+
+.protradedesk-key-features-1-text-container hr {
+  width: 100%;
+  max-width: 252px;
+  border: 1px solid rgba(245, 245, 245, 0.3);
+}
+
+.protradedesk-key-features-1-text-container p {
+  line-height: 152%;
+}
+
+.protradedesk-key-features-3-content-item-image {
+  padding: 32px;
+  border-radius: 16px 16px 0px 0px;
+  border-top: 1px solid var(--black-700);
+  border-right: 1px solid var(--black-700);
+  border-left: 1px solid var(--black-700);
+  background: var(--black-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.protradedesk-key-features-3-content-item-image img {
+  width: 124px;
+  height: 124px;
+  object-fit: contain;
+}
