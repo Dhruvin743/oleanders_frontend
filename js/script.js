@@ -2,6 +2,8 @@
 const headerContainer = document.querySelector('.header-container');
 const footerContainer = document.querySelector('.footer-container');
 const pageContainer = document.querySelector('.page-container');
+const mobileMenu = document.querySelector('.mobile-menu');
+const confirmPopup = document.querySelector('.confirm-popup');
 
 async function loadPage(pageName, currentElement) {
   try {
@@ -40,8 +42,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   const footerResponse = await fetch('partials/footer.html');
   footerContainer.innerHTML = await footerResponse.text();
 
+  // Load mobile menu
+  // const mobileMenuResponse = await fetch('partials/mobileMenu.html');
+  // mobileMenu.innerHTML = await mobileMenuResponse.text();
+
+  // Load confirm popup
+  // const confirmPopupResponse = await fetch('partials/confirmPopup.html');
+  // confirmPopup.innerHTML = await confirmPopupResponse.text();
+
   // Load homepage by default
-  await loadPage('homepage.html');
+  await loadPage('proTradeDesk.html');
 
   // Set up event delegation for header clicks
   headerContainer.addEventListener('click', (e) => {
@@ -86,5 +96,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
       });
     }
+  });
+
+  //  add accordion functionality
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach((item) => {
+    const header = item.querySelector('.accordion-header');
+
+    header.addEventListener('click', () => {
+      // Close all other accordion items
+      accordionItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+
+      // Toggle current item
+      item.classList.toggle('active');
+    });
   });
 });
